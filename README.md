@@ -2,7 +2,7 @@
   <br>
   <a href="https://eclypses.com"><img src="./Eclypses_I_C_S.png" alt="Eclypses Inc" width="200" style="margin-bottom:15px;"></a>
   <br>
-  Eclypses Intern Project - RESTful API
+  Create a REST API With Two GET Request Routes
   <br>
 </h1>
 
@@ -15,94 +15,40 @@
 </p>
 
 <p align="center">
-  <a href="#overview">Overview</a> •
+  <a href="#tasks">Tasks</a> •
   <a href="#goals">Goals</a> •
-  <a href="#specifications">Specifications</a> •
-  <a href="#checklist">Checklist</a>
+  <a href="#next-steps">Next Steps</a>
 </p>
 
-## OVERVIEW
+## Tasks
 
-During this internship, you will learn how to create a RESTful API in NodeJS, use GIT to manage a project, hit the endpoints of your API with a frontend website, and test it by using the Postman tool. This project will end with a presentation given to a small group of Eclypses engineers.
+  1. Install the ExpressJS library as a dependency
+     <details>
+     <summary>Click here if you need help</summary>
 
-## GOALS
+     ```bash
+     npm install express
+     ```
 
- + Learn the basics of NodeJS
- + Learn the basics of the ExpressJS library
- + Learn the basics of Prisma
- + Write a backend RESTful API that retrieves data from a database
-    - Get back successful responses with expected results using Postman
+     </details>
 
-> **Note**  
-> **BONUS**  
-> Write a simple frontend webpage that uses your API
+  2. Initialize ExpressJS as a server running on `http://localhost:3000`
+  3. Create an array of objects called users that contains 10 user’s information as mockup data
+  4. Create a 2 GET requests
+      - One that returns all users at the route `http://localhost:3000/api/users`
+      - One that returns a single user by ID at the route `http://localhost:3000/api/users/{userId}`
 
-## SPECIFICATIONS
+      > **Note** **The route `userId` is a Dynamic Route**  
+      > The curly braces are used as guidance for a variable name that will be replaced with a user’s actual ID like so: `http://localhost:3000/api/users/4`
 
-You will use Visual Studio Code to write your NodeJS code. General tutorials and exercises will be provided for you to follow, and the final project you create should be achievable with the accumulated skill set obtained throughout this internship program.
+  5. Use the Postman application to confirm your API requests are working as intended
+  6. Create a PR (Pull Request) for your branch to be merged into the develop branch to be reviewed
 
-## CHECKLIST
+## Bonus
 
-### Getting Started
+Look into and do some research on Prisma.  
+We will be using Prisma as our ORM (Object Relational Mapper) to communicate with our database next!
 
- + Install VSCode
- + Install NodeJS and NPM
- + Install Postman
- + Install Github Desktop
+## Next Steps
 
-### Create your project
-
- 1. Using Github Desktop, initialize your project as a git repository in a new project directory called `eclypses-rest-api`
-
- 1. Use the terminal (iTerm) to navigate to your project directory
-    <details>
-    <summary>Click here if you need help</summary>
-
-    ```bash
-    ls                 # this will list everything in your current directory
-    cd to/my/directory # this will allow you to change directory
-    .                  # this means your current directory
-    ..                 # this means moving up to the previous directory
-    ```
-
-    </details>
-
- 1. Initialize your project with NPM to setup your package.json file for you
-    <details>
-    <summary>Click here if you need help</summary>
-
-    ```bash
-    npm init -y
-    ```
-
-    </details>
-
- 1. Open your project in VSCode via the terminal
-    <details>
-    <summary>Click here if you need help</summary>
-
-    ```bash
-    code .
-    ```
-
-    </details>
-
- 1. Install ExpressJS
-    <details>
-    <summary>Click here if you need help</summary>
-
-    ```bash
-    npm install express
-    ```
-
-    </details>
-
-### Setup Your Git Branches and Publish To Github
-
-  1. Create a branch named `develop`
-  1. This will be your primary branch used for development
-  1. Create a feature branch named `feature/assignment-1`
-  1. This will be where you will be doing all code for this assignment
-     > **Warning**  
-     > **Make commits regularly**  
-     > A good rule of thumb is to make a commit every time you complete a “full thought” of code that compiles and runs without any errors
+If done with your research, continue on by switching to the `guide/part-2` branch.
