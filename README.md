@@ -16,7 +16,7 @@
 
 <p align="center">
   <a href="#tasks">Tasks</a> •
-  <a href="#goals">Goals</a> •
+  <a href="#bonus">Bonus</a> •
   <a href="#next-steps">Next Steps</a>
 </p>
 
