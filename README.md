@@ -2,7 +2,7 @@
   <br>
   <a href="https://eclypses.com"><img src="./Eclypses_I_C_S.png" alt="Eclypses Inc" width="200" style="margin-bottom:15px;"></a>
   <br>
-  Eclypses<sup style="font-size:8px;">TM</sup> Intern Project - RESTful API
+  Eclypses Intern Project - RESTful API
   <br>
 </h1>
 
