@@ -33,8 +33,8 @@ During this internship, you will learn how to create a RESTful API in NodeJS, us
  + Write a backend RESTful API that retrieves data from a database
     - Get back successful responses with expected results using Postman
 
-> **Note**
-> **BONUS**
+> **Note**  
+> **BONUS**  
 > Write a simple frontend webpage that uses your API
 
 ## SPECIFICATIONS
@@ -42,9 +42,6 @@ During this internship, you will learn how to create a RESTful API in NodeJS, us
 You will use Visual Studio Code to write your NodeJS code. General tutorials and exercises will be provided for you to follow, and the final project you create should be achievable with the accumulated skill set obtained throughout this internship program.
 
 ## CHECKLIST
-
-> **Note**
-> This checklist is part 1 of project
 
 ### Getting Started
 
@@ -55,7 +52,7 @@ You will use Visual Studio Code to write your NodeJS code. General tutorials and
 
 ### Create your project
 
- 1. Using Github Desktop, initialize your project as a git repository in a new project directory called: eclypses-rest-api
+ 1. Using Github Desktop, initialize your project as a git repository in a new project directory called `eclypses-rest-api`
 
  1. Use the terminal (iTerm) to navigate to your project directory
     <details>
@@ -102,10 +99,10 @@ You will use Visual Studio Code to write your NodeJS code. General tutorials and
 
 ### Setup Your Git Branches and Publish To Github
 
-  1. Create a branch named: develop
+  1. Create a branch named `develop`
   1. This will be your primary branch used for development
-  1. Create a feature branch named: feature/assignment-1
+  1. Create a feature branch named `feature/assignment-1`
   1. This will be where you will be doing all code for this assignment
-     > **Warning**
-     > **Make commits regularly**
+     > **Warning**  
+     > **Make commits regularly**  
      > A good rule of thumb is to make a commit every time you complete a “full thought” of code that compiles and runs without any errors
