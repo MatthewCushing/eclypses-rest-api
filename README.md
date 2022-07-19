@@ -71,17 +71,7 @@ You will use Visual Studio Code to write your NodeJS code. General tutorials and
 
     </details>
 
- 4. Initialize your project with NPM to setup your `package.json` file
-    <details>
-    <summary>Click here if you need help</summary>
-
-    ```bash
-    npm init -y
-    ```
-
-    </details>
-
- 5. Open your project in VSCode via the terminal
+ 4. Open your project in VSCode via the terminal
     <details>
     <summary>Click here if you need help</summary>
 
@@ -104,6 +94,38 @@ You will use Visual Studio Code to write your NodeJS code. General tutorials and
 
     > **Warning** **No access to `code` command**   
     > Open VSCode manually and press <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>p</kbd>.  This will open a command palette where you need to search for `Shell Command`.  You will see an option labeled `Install code command in PATH`.  Click that option, restart your terminal, and you should now have access to the `code` command.
+
+    </details>
+
+ 5. Initialize your project with NPM to setup your `package.json` file
+    <details>
+    <summary>Click here if you need help</summary>
+
+    ```bash
+    npm init -y
+    ```
+
+    </details>
+
+ 6. Set your project to use the more modern import syntax, ESM Modules
+    <details>
+    <summary>Click here if you need help</summary>
+
+    1. Open your `package.json` file
+    2. Set the `type` config option to `module`
+
+        ```diff
+        --- a/package.json
+        +++ b/package.json
+        @@ -11,6 +11,7 @@
+            "url": "git+https://github.com/MatthewCushing/eclypses-rest-api.git"
+          },
+          "keywords": [],
+        +  "type": "module",
+          "author": "",
+          "license": "ISC",
+          "bugs": {
+        ```
 
     </details>
 
