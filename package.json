@@ -1,7 +1,7 @@
 {
   "name": "eclypses-rest-api",
   "version": "1.0.0",
-  "description": "<h1 align=\"center\">   <br>   <a href=\"https://eclypses.com\"><img src=\"./Eclypses_I_C_S.png\" alt=\"Eclypses Inc\" width=\"200\" style=\"margin-bottom:15px;\"></a>   <br>   Create a REST API With Two GET Request Routes   <br> </h1>",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,5 +17,7 @@
   "bugs": {
     "url": "https://github.com/MatthewCushing/eclypses-rest-api/issues"
   },
-  "homepage": "https://github.com/MatthewCushing/eclypses-rest-api#readme"
+  "homepage": "https://github.com/MatthewCushing/eclypses-rest-api#readme",
+  "dependencies": {
+  }
 }

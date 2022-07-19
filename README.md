@@ -22,7 +22,19 @@
 
 ## Tasks
 
-  1. Install the ExpressJS library as a dependency
+  1. Install the Nodemon library as a dev dependency, so that you can run your project and make changes without having to restart it constantly.
+     <details>
+     <summary>Click here if you need help</summary>
+
+     ```bash
+     npm install -D nodemon
+     ```
+
+     </details>
+
+  2. Create a `start` script so that you and anyone else opening your project can run, `npm run start` to start it up.
+
+  3. Install the ExpressJS library as a dependency
      <details>
      <summary>Click here if you need help</summary>
 
@@ -32,17 +44,17 @@
 
      </details>
 
-  2. Initialize ExpressJS as a server running on `http://localhost:3000`
-  3. Create an array of objects called users that contains 10 user’s information as mockup data
-  4. Create a 2 GET requests
+  4. Initialize ExpressJS as a server running on `http://localhost:3000`
+  5. Create an array of objects called users that contains 10 user’s information as mockup data
+  6. Create a 2 GET requests
       - One that returns all users at the route `http://localhost:3000/api/users`
       - One that returns a single user by ID at the route `http://localhost:3000/api/users/{userId}`
 
       > **Note** **The route `userId` is a Dynamic Route**  
       > The curly braces are used as guidance for a variable name that will be replaced with a user’s actual ID like so: `http://localhost:3000/api/users/4`
 
-  5. Use the Postman application to confirm your API requests are working as intended
-  6. Create a PR (Pull Request) for your branch to be merged into the develop branch to be reviewed
+  7. Use the Postman application to confirm your API requests are working as intended
+  8. Create a PR (Pull Request) for your branch to be merged into the develop branch to be reviewed
 
 ## Bonus
 
