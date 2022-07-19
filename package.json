@@ -1,0 +1,27 @@
+{
+  "name": "eclypses-rest-api-1",
+  "description": "<h1 align=\"center\">   <br>   <a href=\"https://eclypses.com\"><img src=\"./Eclypses_I_C_S.png\" alt=\"Eclypses Inc\" width=\"200\" style=\"margin-bottom:15px;\"></a>   <br>   Eclypses Intern Project - RESTful API   <br> </h1>",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
+  "scripts": {
+    "start": "nodemon routes/index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CrooperKiller/eclypses-rest-api-1.git"
+  },
+  "keywords": [],
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CrooperKiller/eclypses-rest-api-1/issues"
+  },
+  "homepage": "https://github.com/CrooperKiller/eclypses-rest-api-1#readme"
+}
