@@ -1,21 +1,5 @@
-import express from "express";
-const app = express();
-const PORT = 3000;
-
-app.get(`/api/users/:id`, (req, res) => {
-  const person = users.filter((user) => {
-    return user.id === parseInt(req.params.id);
-  });
-  res.send(person[0]);
-});
-
-app.get("/api/users/", (req, res) => {
-  res.send(users);
-});
-
-app.listen(PORT, () => {
-  console.log(`Listening on port ${PORT}`);
-});
+import { Router } from "express";
+const router = Router();
 
 const users = [
   {
@@ -89,3 +73,16 @@ const users = [
     gender: "Female",
   },
 ];
+
+router.get(`/:id`, (req, res) => {
+  const person = users.filter((user) => {
+    return user.id === parseInt(req.params.id);
+  });
+  res.send(person[0]);
+});
+
+router.get("/", (req, res) => {
+  res.send(users);
+});
+
+export default router;
