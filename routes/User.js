@@ -1,6 +1,6 @@
 import { Router } from "express";
-const router = Router();
 
+const router = Router();
 const users = [
   {
     id: 1,
@@ -81,8 +81,25 @@ router.get(`/:id`, (req, res) => {
   res.send(person[0]);
 });
 
-router.get("/", (req, res) => {
-  res.send(users);
-});
+router
+  .get("/", (req, res) => {
+    res.send(users);
+  })
+  .post("/", (req, res) => {
+    const user = req.body;
+    console.log(user);
+    users.push(user);
+    res.status(201).json(user);
+  })
+  .put(`/:id`, (req, res) => {
+    const person = users.filter((user) => {
+      return user.id === parseInt(req.params.id);
+    });
+    res.send(person[0]);
+    const user = req.body;
+    console.log(user);
+    users.splice(req.params.id - 1, 1, user);
+    res.status(201).json(user);
+  });
 
 export default router;
