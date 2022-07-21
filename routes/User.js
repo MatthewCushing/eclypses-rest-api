@@ -99,7 +99,14 @@ router
     const user = req.body;
     console.log(user);
     users.splice(req.params.id - 1, 1, user);
-    res.status(201).json(user);
   });
+
+router.delete("/:id", (req, res) => {
+  const person = users.filter((user) => {
+    return user.id === parseInt(req.params.id);
+  });
+  res.send(person[0]);
+  users.splice(req.params.id - 1, 1);
+});
 
 export default router;
